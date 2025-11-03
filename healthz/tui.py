@@ -225,9 +225,6 @@ class HistogramDisplay(Static):
         text.append(f"(last {window}s)", style="dim")
         text.append("\n\n")
 
-        # Find max percentage for scaling
-        max_percentage = max(p for _, _, p in histogram) if histogram else 1
-
         for label, count, percentage in histogram:
             # Determine Nord color based on the latency range
             if "0-50" in label:
@@ -243,8 +240,8 @@ class HistogramDisplay(Static):
             else:  # >1s
                 bar_color = NORD_COLORS["aurora_red"]  # Extremely slow
 
-            # Create bar
-            bar_length = int((percentage / max(max_percentage, 1)) * 40)
+            # Create bar scaled to 100%
+            bar_length = int((percentage / 100) * 40)
             bar = Text()
             bar.append("█" * bar_length, style=bar_color)
             bar.append("░" * (40 - bar_length), style="dim")
