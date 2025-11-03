@@ -2,12 +2,12 @@
 name = "healthz"
 version = "0.1.0"
 description = "Interactive HTTP health monitoring tool with real-time metrics"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Delos Intelligence <contact@delos.so>"]
 readme = "README.md"
 license = "MIT"
-homepage = "https://github.com/yourusername/healthz"
-repository = "https://github.com/yourusername/healthz"
-keywords = ["http", "monitoring", "health-check", "load-testing", "performance"]
+homepage = "https://github.com/Delos-Intelligence/healthz"
+repository = "https://github.com/Delos-Intelligence/healthz"
+keywords = ["http", "monitoring", "health-check", "load-testing", "performance", "async", "debugging"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
