@@ -31,7 +31,7 @@ textual-plotext = "^0.2.0"
 pytest = "^7.0.0"
 pytest-asyncio = "^0.21.0"
 black = "^23.0.0"
-ruff = "^0.1.0"
+ruff = ">=0.1,<0.15"
 
 [tool.poetry.scripts]
 healthz = "healthz.cli:main"
