@@ -23,7 +23,7 @@ packages = [{include = "healthz"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 aiohttp = "^3.9.0"
-textual = "^0.47.0"
+textual = ">=0.47,<6.7"
 click = "^8.1.0"
 textual-plotext = "^0.2.0"
 
